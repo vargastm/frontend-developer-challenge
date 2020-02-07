@@ -1,11 +1,16 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Heveltica Neue', 'Helvetica', 'Arial', sans-serif;
 	font-size: 100%;
 	font-weight: 300;
 	box-sizing: border-box;
 	outline: none;
-	font-family: 'Helvetica Neue', sans-serif;
+}
+
+@font-face{
+	font-family: 'Heveltica Neue';
+	src: url('../fonts/helvetica-neue.ttf');
 }
 
 button, a {

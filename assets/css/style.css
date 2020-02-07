@@ -205,8 +205,13 @@ form input {
     color: #FFFFFF;
 }
 
-#preloader{
+#preloader {
     display: none;
-    margin: 43px auto 166px auto;
+    margin: 43px auto 168px auto;
     width: 32px;
+}
+
+.message-error {
+    color: #FF0000;
+    font-size: 12px;
 }

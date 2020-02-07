@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let urlApi = "frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1";
     getProducts(urlApi);
 });
-
+let countClick = 0;
 document.getElementById("button-load-more").onclick = () => {
     startPreloader();
     getProducts(urlApi);
@@ -20,7 +20,7 @@ function getProducts(url) {
         .finally(() => endPreloader());
 }
 
-function showProducts(data){
+function showProducts(data) {
     data.forEach(product => {
         const article = document.createElement('article');
         article.className = 'product animated fadeIn';
@@ -36,7 +36,7 @@ function showProducts(data){
     });
 }
 
-function organizePrice(price){
+function organizePrice(price) {
     return price.toFixed(2).toString().replace(".", ",");
 }
 
