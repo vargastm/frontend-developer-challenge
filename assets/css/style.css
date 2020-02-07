@@ -204,3 +204,9 @@ form input {
     font-size: 12px;
     color: #FFFFFF;
 }
+
+#preloader{
+    display: none;
+    margin: 43px auto 166px auto;
+    width: 32px;
+}
