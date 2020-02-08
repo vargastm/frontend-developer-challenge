@@ -31,8 +31,7 @@
     font-size: 14px;
     height: 40px;
     width: 160px;
-    margin: 20px;
-    margin-top: 50px;
+    margin: 50px 20px 20px 20px;
     background-color: #FFFFFF;
     border: 1px solid #707070;
     border-radius: 4px;
@@ -207,11 +206,97 @@ form input {
 
 #preloader {
     display: none;
-    margin: 43px auto 168px auto;
+    margin: 43px auto 166px auto;
     width: 32px;
 }
 
 .message-error {
     color: #FF0000;
     font-size: 12px;
+}
+
+@media (max-width: 979px) {
+    #products {
+        max-width: 480px;
+    }
+
+    #header nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #header ul {
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header a {
+        margin: 50px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header a {
+        margin: 0px;
+    }
+    
+    #header ul {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        width: 340px;
+        align-items: center;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+     }
+}
+
+@media (max-width: 600px) {
+    #header h1 {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    #header p {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    #header strong {
+        font-size: 30px;
+    }
+
+    #header ul {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #products {
+        width: 200px;
+    }
+
+    #share-news {
+        width: 250px;
+        text-align: center;
+    }
+
+    #email, #name{
+        width: 250px;
+    }
+
+    #button-submit, #button-load-more {
+        width: 210px;
+    }
+
+    #label-email {
+        margin-top: 10px;
+    }
 }
